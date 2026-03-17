@@ -60,6 +60,13 @@ body {
     margin: 40px auto 0;
 }
 
+.rodape {
+    text-align: center;
+    color: #ffff;
+    background-color: #040405;
+    padding: 20px 0;
+}
+
 @media (max-width: 796px) {
     .titulo {
         font-size: 40px;
