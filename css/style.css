@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Datatype:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    background-color: #0E1014;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    margin: 76px auto 0;
+}
+
+.titulo {
+    color: #ffff;
+    text-align: center;
+    font-size: 60px;
+    line-height: 80px;
+    margin: 20px auto 0;
+}
+
+.roxo {
+    color: #9747FF;
+}
+
+.texto {
+    color: #ffff;
+    text-align: center;
+    margin: 20px auto 0;
+    font-size: 20px;
+}
+
+.btn {
+    text-align: center;
+    margin: 40px auto 0;
+}
+
+.botao {
+    text-decoration: none;
+    color: #ffff;
+    background-color: #9747FF;
+    padding: 16px 48px;
+    border-radius: 36px;
+    transition: 0.5s;
+}
+
+.botao:hover {
+    background-color: #8233E8;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto 0;
+}
+
+@media (max-width: 796px) {
+    .titulo {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .texto {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    .titulo {
+        font-size: 30px;
+    }
+
+    .botao {
+        padding: 10px 40px;
+    }
+
+    .celular {
+        width: 375px;
+    }
+}
