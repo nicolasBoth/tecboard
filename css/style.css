@@ -7,6 +7,13 @@
 
 body {
     background-color: #0e1014;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 .cabecalho {
@@ -15,17 +22,16 @@ body {
 }
 
 .logo {
-    margin-top: 48px;
-    margin-left: 335px;
+    padding: 20px 0px 0px 20px;
 }
 
 .titulo {
     text-align: center;
     color: #fff;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bold;
-    line-height: 80px;
-    margin: 62px auto 0;
+    line-height: 50px;
+    margin: 42px auto 0;
 }
 
 .roxo {
@@ -36,13 +42,13 @@ body {
     text-align: center;
     color: #fff;
     margin: 24px auto 0;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .btn {
     display: flex;
     justify-content: center;
-    margin: 34px auto 0;
+    margin: 34px auto;
 }
 
 .botao {
@@ -50,10 +56,10 @@ body {
     color: #fff;
     text-align: center;
     background-color: #9747FF;
-    line-height: 60px;
-    width: 336px;
+    line-height: 50px;
+    width: 251px;
     border-radius: 36px;
-    font-size: 20px;
+    font-size: 15px;
     transition: 0.5s;
 }
 
@@ -68,39 +74,56 @@ body {
 }
 
 .celular {
-    width: 792px;
-    height: 415px;
+    width: 425px;
+    height: 230px;
 }
 
-@media(max-width: 768px) {
+@media (min-width: 768px) {
     .logo {
-        margin-left: 75px;
-    }
-
-    .celular {
-        height: 350px;
-        width: 727px;
-    }
-}
-
-@media(max-width: 375px){
-    .logo {
-        margin-left: 10px;
-        margin-top: 30px;
+        padding: 40px 0 0 50px;
     }
 
     .titulo {
-        font-size: 40px;
+        font-size: 50px;
+        line-height: 60px;
     }
+    
+    .celular {
+        height: 350px;
+        width: 600px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo {
+        padding-left: 150px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .logo {
+        padding: 70px 0 0 360px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .titulo {
+        font-size: 64px;
+        line-height: 80px;
+    }
+
     .texto {
         font-size: 20px;
     }
 
     .botao {
-        width: 251px;
+        line-height: 66px;
+        font-size: 20px;
+        width: 340px;
     }
+
     .celular {
-        width: 341px;
-        height: 230px;
+        width: 792px;
+        height: 446px;
     }
 }
