@@ -9,9 +9,18 @@ body {
     background-color: #0e1014;
 }
 
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+}
+
 .logo {
     margin-top: 48px;
     margin-left: 335px;
+}
+
+.modo {
+    
 }
 
 .titulo {
