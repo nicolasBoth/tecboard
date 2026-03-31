@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins";
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 body {
@@ -78,7 +83,83 @@ main {
     height: 230px;
 }
 
+.rodape {
+    color: #fff;
+    background-color: #050507;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-weight: bold;
+}
+
+.suporte {
+    margin-top: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.subitems {
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+
+.subitems:hover {
+    color: #9e9d9d;
+    cursor: pointer;
+}
+
+.descubra {
+    line-height: 50px;
+    margin-bottom: 20px;
+    border-top: 1px solid #2c2c2c;
+    padding-top: 20px;
+}
+
+.social {
+    line-height: 50px;
+    border-top: 1px solid #2c2c2c;
+    padding-top: 20px;
+}
+
+.icones {
+    display: flex;
+}
+
+.icons {
+    transition: 0.2s;
+}
+
+.icons:hover{
+    color: #9e9d9d !important;
+}
+
+.facebook {
+    padding-right: 20px;
+}
+
+.twitter {
+    padding-right: 20px;
+}
+
+.youtube {
+    padding-right: 20px;
+}
+
+.logo-rodape {
+    border-top: 1px solid #2c2c2c;
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.termos {
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
 @media (min-width: 768px) {
+
     .logo {
         padding: 40px 0 0 50px;
     }
@@ -87,22 +168,142 @@ main {
         font-size: 50px;
         line-height: 60px;
     }
+
+    .texto {
+        font-size: 18px;
+    }
+
+    .botao {
+        line-height: 60px;
+        width: 300px;
+        font-size: 18px;
+    }
     
     .celular {
         height: 350px;
         width: 600px;
     }
+
+    .rodape-secao1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .descubra {
+        padding: 0;
+        margin: 0;
+        padding-right: 100px;
+        border: none;
+    }
+
+    .suporte {
+        margin: 0;
+    }
+
+    .social {
+        border: none;
+    }
+
+    .logo-rodape {
+        display: flex;
+        justify-content: center;
+    }
+
+    .termos-lista {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        padding-bottom: 50px;
+    }
 }
 
 @media (min-width: 1024px) {
     .logo {
-        padding-left: 150px;
+        padding-left: 120px;
+    }
+
+    .titulo {
+        font-size: 60px;
+    }
+
+    .texto {
+        font-size: 20px;
+    }
+
+    .botao {
+        font-size: 20px;
+        width: 320px;
+        line-height: 70px;
+    }
+
+    .celular {
+        width: 720px;
+        height: 420px;
+    }
+
+    .rodape-secao1 {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: start;
+    }
+
+    .social {
+        padding: 0;
+    }
+
+    .logo-rodape {
+        justify-content: start;
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .rodape-secao2 {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        border-top: 1px solid #2c2c2c;
+        padding: 40px 0;
+    }
+
+    .termos {
+        margin: 0;
+    }
+
+    .termos-lista {
+        padding: 0;
+        grid-column-gap: 10px;
     }
 }
 
 @media (min-width: 1440px) {
     .logo {
-        padding: 70px 0 0 360px;
+        padding: 70px 0 0 300px;
+    }
+
+    .celular {
+        width: 792px;
+        height: 442px;
+    }
+
+    .rodape {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .rodape-secao1 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .logo-rodape {
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    .rodape-secao2 {
+        padding: 20px 0;
+        border-top: 1px solid #2c2c2c;
     }
 }
 
@@ -125,5 +326,13 @@ main {
     .celular {
         width: 792px;
         height: 446px;
+    }
+
+    .rodape {
+        padding: 0 330px;
+    }
+
+    .termos-lista {
+        grid-column-gap: 20px;
     }
 }
